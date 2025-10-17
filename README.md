@@ -1,6 +1,4 @@
-Perfect! I can draft a **README.md** for your MEGA project that includes the project overview, current features, future plans, and to-dos. Here's a polished version you can place in your project root:
 
-````markdown
 # MEGA - Meteorological and Environmental General Analyst
 
 ## Project Overview
@@ -24,7 +22,7 @@ The main goal of MEGA is to provide users with a **clear, accessible, and visual
 1. Clone the repository:
    ```bash
    git clone <repository_url>
-````
+   ```
 
 2. Navigate to the project folder:
 
