@@ -1,0 +1,1 @@
+winget install --name Julia --id 9NJNWW8PVKMN -e -s msstore

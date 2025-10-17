@@ -1,0 +1,1 @@
+sudo yay -s julia
