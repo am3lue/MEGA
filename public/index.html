@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEGA - Weather Analyst</title>
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/">MEGA</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+      </div>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Welcome to MEGA</h1>
+      <p>Your personal Meteorological General Analyst</p>
+      <form action="/analysis" method="GET" class="search-form">
+        <input type="text" name="location" placeholder="Enter a location (e.g., London)">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Created by Blue Francis and Mercy sostenance</p>
+      <p>&copy; 2025 MEGA. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

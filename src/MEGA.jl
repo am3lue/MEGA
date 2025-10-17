@@ -2,6 +2,8 @@ module MEGA
 
 using Genie
 
+include("Weather.jl")
+
 const up = Genie.up
 export up
 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEGA - Weather Analysis</title>
+  <link rel="stylesheet" href="/css/app.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/">MEGA</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+      </div>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Weather Analysis for <%= location %></h1>
+
+    <canvas id="weatherChart"></canvas>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Temperature (°C)</th>
+          <th>Windspeed (km/h)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= table_rows %>
+      </tbody>
+    </table>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Created by Blue Francis and Mercy sostenance</p>
+      <p>&copy; 2025 MEGA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const weatherData = <%= weather_json %>;
+    const ctx = document.getElementById('weatherChart').getContext('2d');
+    const weatherChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: weatherData.hourly.time,
+        datasets: [{
+          label: 'Temperature (°C)',
+          data: weatherData.hourly.temperature_2m,
+          borderColor: 'rgb(255, 99, 132)',
+          tension: 0.1
+        },
+        {
+          label: 'Windspeed (km/h)',
+          data: weatherData.hourly.windspeed_10m,
+          borderColor: 'rgb(54, 162, 235)',
+          tension: 0.1
+        }]
+      },
+      options: {}
+    });
+  </script>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

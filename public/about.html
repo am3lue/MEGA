@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEGA - About</title>
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/">MEGA</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+      </div>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>About MEGA</h1>
+    <p>MEGA (Meteorological General Analyst) is a web application that provides weather data analysis. It is built with Genie, a high-performance, high-productivity Julia web framework.</p>
+    <p>This application uses the Open-Meteo API to fetch weather data.</p>
+
+    <div class="features">
+      <div class="feature">
+        <img src="/img/data-analysis.svg" alt="Data Analysis">
+        <h3>Data Analysis</h3>
+        <p>Get detailed weather data analysis with charts and tables.</p>
+      </div>
+      <div class="feature">
+        <img src="/img/weather.svg" alt="Weather">
+        <h3>Real-time Data</h3>
+        <p>Fetches real-time weather data from the Open-Meteo API.</p>
+      </div>
+      <div class="feature">
+        <img src="/img/julia.svg" alt="Julia">
+        <h3>Built with Julia</h3>
+        <p>Powered by the high-performance Julia programming language and Genie framework.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Created by Blue Francis and Mercy sostenance</p>
+      <p>&copy; 2025 MEGA. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
