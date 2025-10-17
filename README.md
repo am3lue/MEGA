@@ -114,7 +114,7 @@ MEGA is planned to evolve into a more advanced **Meteorological and Environmenta
 
 ## Credits
 
-Created by **Blue Francis** and **Mercy Sostenance**
+Created by **Blue Francis** and **Mercy Sostenes**
 © 2025 MEGA. All rights reserved.
 
 ```
