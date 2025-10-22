@@ -1,4 +1,3 @@
-
 # MEGA - Meteorological and Environmental General Analyst
 
 ## Project Overview
@@ -117,11 +116,4 @@ MEGA is planned to evolve into a more advanced **Meteorological and Environmenta
 Created by **Blue Francis** and **Mercy Sostenes**
 © 2025 MEGA. All rights reserved.
 
-```
-
----
-
-If you want, I can **also make a shorter “user-friendly” version** for GitHub that includes **badges, screenshots, and a simpler “what it does” section** so it looks professional on GitHub.  
-
-Do you want me to do that version too?
 ```
